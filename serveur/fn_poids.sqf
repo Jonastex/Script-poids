@@ -16,7 +16,7 @@ switch (_choix)
 
 			private _queryResult = [_query,2] call DB_fnc_asyncCall;
 
-			[4, _queryResult] remoteExec ["john_fnc_recuppoids",(_ret = owner _ret)];
+			[4, _queryResult] remoteExec ["john_fnc_gros",(owner _ret)];
 
 		};
 
