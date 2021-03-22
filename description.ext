@@ -1,0 +1,13 @@
+/*
+Author : John lpb
+Discord: Jonastex#2733
+Ce documents est soumis a des droits.
+steam: https://steamcommunity.com/id/jonastex
+LifeIsDev.com
+*/
+#include "dialogs\define.hpp"
+#include "dialogs\menu_action.hpp"
+
+class CfgFunctions {
+    #include "fonctionslist.hpp"
+};
