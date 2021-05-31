@@ -5,11 +5,11 @@
  * @modify date 2020-11-28
  * @desc [description]
 */
-_choix = param [0];
+private _choix = param [0];
 switch (choix)
 	do {
 		case 0 : {
-			_poids = (findDisplay 2811) displayCtrl 032811;
+			private _poids = (findDisplay 2811) displayCtrl 032811;
 			_poids ctrlSetText format ["Votre poids : %1", (round (25 /(poids - 0.74 )))];
 		};
 
@@ -39,8 +39,7 @@ switch (choix)
 		};
 
 		case 4 : {
-			_result = param [1];
-			poids = _result select 0;
+			poids = (param [1]) select 0;
 			player setAnimSpeedCoef poids;
 		};
 
