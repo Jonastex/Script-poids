@@ -5,14 +5,14 @@
  * @modify date 2020-11-28
  * @desc [description]
  */
-_choix = param [0];
+private _choix = param [0];
 switch (_choix)
 	do {
 		case 0 : {
-			_id = param [1];
-			_ret = param [2];
+			private _id = param [1];
+			private _ret = param [2];
 
-			_query = format ["SELECT poids FROM players WHERE pid='%1'", _id];
+			private _query = format ["SELECT poids FROM players WHERE pid='%1'", _id];
 
 			private _queryResult = [_query,2] call DB_fnc_asyncCall;
 
@@ -21,10 +21,10 @@ switch (_choix)
 		};
 
 		case 1 : {
-			_id = param [1];
-			_poids = param [2];
+			private _id = param [1];
+			private _poids = param [2];
 
-			_query = format ["UPDATE players SET poids='%1' WHERE pid='%2'", _poids, _id];
+			private _query = format ["UPDATE players SET poids='%1' WHERE pid='%2'", _poids, _id];
 
 			[_query,1] call DB_fnc_asyncCall;
 		};
