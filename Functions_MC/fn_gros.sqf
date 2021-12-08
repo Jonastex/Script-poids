@@ -6,7 +6,7 @@
  * @desc [description]
 */
 private _choix = param [0];
-switch (choix)
+switch (_choix)
 	do {
 		case 0 : {
 			private _poids = (findDisplay 2811) displayCtrl 032811;
