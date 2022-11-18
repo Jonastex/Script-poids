@@ -1,5 +1,4 @@
 # Script-poids
-Attention : dans l' init j' ai mis [1] spawn john_fnc_gros; Il faut mettre : [4] spawn john_fnc_gros; Sorry :)
 
 Liens utile à regarder : https://community.bistudio.com/wiki/Intellectual_Property 
 &
